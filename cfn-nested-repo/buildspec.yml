@@ -23,7 +23,7 @@ phases:
   pre_build:
     commands:
       - echo "Validating CFN templates"
-      - echo "my TEMPLATE_FILES value is: $TEMPLATE_FILES" 
+      - echo "my TEMPLATE_FILES value is $TEMPLATE_FILES"
       - |
         for cfn_template in $TEMPLATE_FILES; do
           echo "Validating CloudFormation template file $cfn_template"
